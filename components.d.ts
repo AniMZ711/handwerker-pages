@@ -8,7 +8,25 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Avatar: typeof import('primevue/avatar')['default']
     Button: typeof import('primevue/button')['default']
+    CallToAction: typeof import('./src/components/CallToAction.vue')['default']
+    CareerSection: typeof import('./src/components/CareerSection.vue')['default']
+    CarreerSection: typeof import('./src/components/CarreerSection.vue')['default']
+    ContactSection: typeof import('./src/components/ContactSection.vue')['default']
+    Footer: typeof import('./src/components/Footer.vue')['default']
+    Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    HeroSection: typeof import('./src/components/HeroSection.vue')['default']
+    InputText: typeof import('primevue/inputtext')['default']
+    Menubar: typeof import('primevue/menubar')['default']
+    ReferencesSection: typeof import('./src/components/ReferencesSection.vue')['default']
+    ScrollTop: typeof import('primevue/scrolltop')['default']
+    Section: typeof import('./src/components/Section.vue')['default']
+    ServicesSection: typeof import('./src/components/ServicesSection.vue')['default']
+    TeamSection: typeof import('./src/components/TeamSection.vue')['default']
+  }
+  export interface ComponentCustomProperties {
+    AnimateOnScroll: typeof import('primevue/animateonscroll')['default']
   }
 }
