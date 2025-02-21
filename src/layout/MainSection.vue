@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import HeroSection from "@/components/HeroSection.vue";
 import TeamSection from "@/components/TeamSection.vue";
 import ServicesSection from "@/components/ServicesSection.vue";
