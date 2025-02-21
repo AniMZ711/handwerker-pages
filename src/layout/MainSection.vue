@@ -8,12 +8,12 @@ import CareerSection from "@/components/CareerSection.vue";
 </script>
 
 <template>
-  <main class="">
-    <HeroSection />
-    <ServicesSection />
-    <TeamSection />
-    <ReferencesSection />
-    <CareerSection />
-    <ContactSection />
+  <main>
+    <HeroSection id="hero" />
+    <ServicesSection id="services" />
+    <TeamSection id="team" />
+    <ReferencesSection id="references" />
+    <CareerSection id="career" />
+    <ContactSection id="contact" />
   </main>
 </template>

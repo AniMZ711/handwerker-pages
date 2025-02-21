@@ -17,8 +17,6 @@ const MyPreset = definePreset(Aura, {
       background: "transparent",
       itemPadding: "0.5rem 1rem",
       itemFocusBackground: "transparent",
-      itemFocusColor: "{primary.color}",
-      itemActiveColor: "{primary.color}",
     },
   },
   primitive: {
