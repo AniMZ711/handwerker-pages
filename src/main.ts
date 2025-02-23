@@ -6,19 +6,7 @@ import Aura from "@primevue/themes/aura";
 import "primeicons/primeicons.css";
 import { definePreset } from "@primevue/themes";
 const app = createApp(App);
-
 const MyPreset = definePreset(Aura, {
-  components: {
-    menubar: {
-      gap: "0.5rem",
-
-      borderRadius: "none",
-      borderColor: "transparent",
-      background: "transparent",
-      itemPadding: "0.5rem 1rem",
-      itemFocusBackground: "transparent",
-    },
-  },
   primitive: {
     borderRadius: {
       none: "0",
@@ -340,7 +328,6 @@ const MyPreset = definePreset(Aura, {
       900: "#064e3b",
       950: "#022c22",
     },
-
     formField: {
       paddingX: "0.75rem",
       paddingY: "0.5rem",
@@ -364,7 +351,6 @@ const MyPreset = definePreset(Aura, {
       },
       transitionDuration: "{transition.duration}",
     },
-
     list: {
       padding: "0.25rem 0.25rem",
       gap: "2px",
@@ -565,7 +551,7 @@ const MyPreset = definePreset(Aura, {
           600: "#52525b",
           700: "#3f3f46",
           800: "#27272a",
-          900: "#18181b",
+          900: "#121212",
           950: "#09090b",
         },
         primary: {

@@ -28,5 +28,6 @@ declare module 'vue' {
   }
   export interface ComponentCustomProperties {
     AnimateOnScroll: typeof import('primevue/animateonscroll')['default']
+    Ripple: typeof import('primevue/ripple')['default']
   }
 }

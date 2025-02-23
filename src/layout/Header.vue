@@ -1,21 +1,33 @@
 <template>
   <header
-    class="fixed px-8 py-2 w-full h-24 grid grid-cols-5 items-center shadow-md"
+    class="myheader sticky top-0 px-8 py-2 w-full h-24 grid grid-cols-5 items-center shadow-md"
   >
-    <a href="#" class="relative z-20 flex items-center gap-4">
+    <a id="test" href="#" class="test relative z-20 flex items-center gap-4">
       <div class="text-surface-0 text-lg font-semibold">Handwerker 1234</div>
     </a>
-    <div class="flex justify-center col-span-3">
-      <Menubar :model="menuItems">
-        <template #item="{ item }">
-          <a
-            :class="item.id === activeSection ? 'text-primary' : ''"
-            @click="item.command"
+
+    <div class="col-span-3">
+      <nav class="flex justify-center" role="navigation">
+        <ul class="flex items-center gap-4 nav-list">
+          <li
+            v-for="item in menuItems"
+            :key="item.id"
+            class="nav-item"
+            :class="[
+              item.id === activeSection ? 'text-primary' : '',
+              'hover:bg-blue-700 hover:text-white px-3 py-1 rounded',
+            ]"
           >
-            {{ item.label }}
-          </a>
-        </template>
-      </Menubar>
+            <a
+              href="#"
+              :class="item.id === activeSection ? 'text-primary' : ''"
+              @click.prevent="item.command"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="flex justify-end">
       <Button label="Jetzt kontaktieren" @click="scrollToSection('contact')">
@@ -91,6 +103,16 @@ onUnmounted(() => {
   .p-menubar {
     display: flex;
     justify-content: end;
+  }
+}
+
+.myheader {
+  background-color: var(--p-surface-0);
+}
+
+@media (prefers-color-scheme: dark) {
+  .myheader {
+    background-color: var(--p-surface-900);
   }
 }
 </style>
